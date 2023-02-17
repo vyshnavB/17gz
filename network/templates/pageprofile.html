@@ -1003,8 +1003,8 @@
             <form action="{% url 'create_pagepost' pro.id %}" method="POST" class="newpost" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">description</label>
-                    <textarea rows="5" type="type" name="content_text" class="form-control"></textarea>
+                
+                    <textarea rows="5" type="type"  name="text" class="form-control" placeholder="what do you to talk about?"></textarea>
                   </div>
     
                   <div class="row">
@@ -1028,7 +1028,7 @@
                     
                     <div class="passport-box" style="display: none;">
                         <div class="mb-3" style="margin-left: 10x;">
-                            <label for="exampleFormControlInput1" class="form-label">Title</label>
+                            <label for="exampleFormControlInput1" class="form-label">title</label>
                             <input type="type" class="form-control" name="title" >                        
                           </div>
                             <div class="mb-3">
